@@ -1,0 +1,7 @@
+int Pi 14
+print(Pi)
+
+str Hello "Hello from BlueCopper!"
+print(Hello)
+
+print("Hello World!")

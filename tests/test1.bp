@@ -1,0 +1,5 @@
+float N 15.7
+bool Make true
+
+print(N)
+print(Make)

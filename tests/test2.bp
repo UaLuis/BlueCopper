@@ -1,0 +1,5 @@
+bool Know false
+
+if bool = false {
+print("Var Know is have value False")
+}
