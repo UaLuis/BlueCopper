@@ -1,7 +1,14 @@
-int Pi 14
-print(Pi)
+.start:
+   print A
+   print Pi
+   print F
+   print N
+.start_end
 
-str Hello "Hello from BlueCopper!"
-print(Hello)
+.data:
+   string A "Hello World!"
+   int Pi 14
+   float F 12.2
+   bool N True
+.data_end
 
-print("Hello World!")
