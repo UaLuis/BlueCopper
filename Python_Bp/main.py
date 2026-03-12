@@ -5,7 +5,7 @@ import sys
 
 code = []
 
-code = pr.read_file("/Users/wolfi/BlueCopper/tests/test0.bp")
+code = pr.read_file("/Users/wolfi/BlueCopper/tests/test1.bp")
 
 index_data, index_data_end, index_start, index_start_end = pr.check_base_structure(code)
 pr.parser(code, index_start, index_data, index_data_end, index_start_end)

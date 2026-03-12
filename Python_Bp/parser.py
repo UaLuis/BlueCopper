@@ -1,19 +1,6 @@
 from all_functions import base_function as bsf
-import shlex
+import shlex, edit_variables
 
-variables = {}
-
-def create_var(name, value, type):
-    if type == 'int':
-        variables[name] = int(value)
-    elif type == 'string': 
-        variables[name] = str(value)
-    elif type == 'float':
-        variables[name] = float(value)
-    elif type == 'bool':
-        variables[name] = bool(value)
-    else:
-        print(f'Помилка! Не існує типу {type}!')
         
 def resolve_args(args):
     return [variables.get(a, a) for a in args]
@@ -62,6 +49,7 @@ def check_structure(code, type_structure):
     pass
     
 def parser(code, index_start, index_data, index_data_end, index_start_end):
+    bsf.set_create_var(create_var)
     #Читання блоку .data та створення змінних
     for i in range(index_data + 1, index_data_end):
         name, value, type = code[i][1], code[i][2], code[i][0]

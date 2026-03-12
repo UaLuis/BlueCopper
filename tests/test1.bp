@@ -1,5 +1,10 @@
-float N 15.7
-bool Make true
+.start:
+   plus A B X
+   minus B A X
+   print X
+.start_end
 
-print(N)
-print(Make)
+.data:
+   int A 2
+   int B 3
+.data_end
